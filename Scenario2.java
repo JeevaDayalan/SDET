@@ -14,7 +14,7 @@ public WebDriverWait wait;
 WrapperUtil wrapper = new WrapperUtil();
 public static String parentwindow = "";
 
-@Give("^navigating to the International url Country : (.*) and selecting headlines)
+@Give("^navigating to the International url Country (.*) and selecting headlines)
 public void channelnews(String Country) throws Exception {
 
 try{
@@ -56,7 +56,7 @@ catch (Exception e)
 	throw new Exception("Execution failed due to error :" +e.getMessage());
    }
 
-@Then("^scrolling to headlines number (.*) in international url Country : (.*)")
+@Then("^scrolling to headlines number (.*) in international url Country (.*)")
 public void scroll(int number , String Country) throws Exception {
 
 try{
