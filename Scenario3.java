@@ -2,7 +2,7 @@ package glue;
 
 public class Scenario3{
 
-private static Logger Log = LogManager.getLogger(Scenario1.calss.getName());
+private static Logger Log = LogManager.getLogger(Scenario1.class.getName());
 wrapperUtil wrap = new WrapperUtil();
 String browserprop = SetupPropertiesLoader.getProperty("browser","directory");
 String urlprop = SetupPropertiesLoader.getProperty("URL","directory");
@@ -14,7 +14,7 @@ public WebDriverWait wait;
 WrapperUtil wrapper = new WrapperUtil();
 public static String parentwindow = "";
 
-@Give("^navigating to the International url Country (.*) and select (.*))
+@Given("^navigating to the International url Country (.*) and select (.*))
 public void channelnews(String Country , String Option) throws Exception {
 
 try{
