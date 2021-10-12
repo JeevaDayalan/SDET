@@ -20,7 +20,7 @@ public void channelnews() throws Exception {
 try{
 	BaseTestsetup.driver.get(urlProp);
 	log.info("Navigated to URL");
-	basepage = new Basepage(BaseTestSetup.driver, BaseTestSetup.wait);
+	basepage = new BasePage(BaseTestSetup.driver, BaseTestSetup.wait);
 	WebElement Headline = driver.findelement(By.xpath("//*[@id="block-mc-cna-theme-mainpagecontent"]/article/div[1]/div[2]/div/section/div/h1")
 	BaseTestSetup.wait.until(ExpectedConditions.presenceofElementLocaed(Headline));
 	String MainHeadline = Headline.getText();
