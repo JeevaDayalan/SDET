@@ -14,7 +14,7 @@ public WebDriverWait wait;
 WrapperUtil wrapper = new WrapperUtil();
 public static String parentwindow = "";
 
-@Give("^navigating to the International url Country : (.*) and select (.*))
+@Give("^navigating to the International url Country (.*) and select (.*))
 public void channelnews(String Country , String Option) throws Exception {
 
 try{
