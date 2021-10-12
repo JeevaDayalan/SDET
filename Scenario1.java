@@ -2,7 +2,7 @@ package glue;
 
 public class Scenario1{
 
-private static Logger Log = LogManager.getLogger(Scenario1.calss.getName());
+private static Logger Log = LogManager.getLogger(Scenario1.class.getName());
 wrapperUtil wrap = new WrapperUtil();
 String browserprop = SetupPropertiesLoader.getProperty("browser","directory");
 String urlprop = SetupPropertiesLoader.getProperty("URL","directory");
@@ -14,7 +14,7 @@ public WebDriverWait wait;
 WrapperUtil wrapper = new WrapperUtil();
 public static String parentwindow = "";
 
-@Give("^navigating to the url and clicking headlines)
+@Given("^navigating to the url and clicking headlines)
 public void channelnews() throws Exception {
 
 try{
